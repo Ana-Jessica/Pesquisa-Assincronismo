@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre Assincronismo</title>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: Arial;
+    }
+    li{
+        padding: auto;
+        text-align: justify;
+    }
+    .table{
+        margin: 5%;
+        text-align: left;
+    }
+    .table-title{
+        background-color: rgb(111, 111, 111);
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <ol type="A">
+        <li>Assincronismo</li>
+            <p>Definição: Em programação, assincronismo refere-se à capacidade de um programa executar múltiplas tarefas de forma concorrente, sem que uma tarefa precise esperar a conclusão da outra.
+                 Isso permite que o programa continue a responder a outras solicitações enquanto uma tarefa está em andamento, como por exemplo, uma operação de entrada/saída (I/O), como a leitura de
+                 um arquivo ou a realização de uma requisição HTTP.
+            </p>
+            <ol type="1">
+                <li>AJAX (Asynchronous Javascript And XML)</li>
+                <ul>
+                    <li>AJAX permite que páginas da web sejam atualizadas assincronamente, trocando dados com o servidor sem recarregar a página inteira.</li>
+                </ul>
+                <li>Promises</li>
+                <ul>
+                    <li>A Promises fornece uma maneira de lidar com operações assíncronas, retornando um objeto que representa o eventual sucesso ou falha de uma operação assíncrona.</li>
+                </ul>
+                <li>Fetch API</li>
+                <ul>
+                    <li>A Fetch API é uma interface mais simples para fazer requisições assíncronas, retornando uma Promise.</li>
+                </ul>
+                <li>Async / Await</li>
+                <ul>
+                    <li><strong>asynce</strong> e <strong>await</strong> forneça uma maneira mais clara de trabalhar com promessas, tornando o código mais legível e semelhante ao código síncrono.</li>
+                </ul>
+                <li>Quais vantagens/desvantagens de usar cada uma das opções acima?</li>
+                <table border=1 class="table">
+                    <tr class="table-title">
+                        <th>Técnica</th>
+                        <th>Vantagens</th>
+                        <th>Desvantagens</th>
+                    </tr>
+                    <tr>
+                        <th>AJAX</th>
+                        <th>Compatível com a maioria dos navegadores</th>
+                        <th>Sintaxe mais detalhada e mais propensa a erros</th>
+                    </tr>
+                    <tr>
+                        <th>Promises</th>
+                        <th>Simples de encadear várias operações assíncronas</th>
+                        <th>Código pode ficar aninhado em callbacks</th>
+                    </tr>
+                    <tr>
+                        <th>Fetch API</th>
+                        <th>Código mais limpo e legível do XMLHttpRequest</th>
+                        <th>Falta suporte para interceptar certas requisições nativamente</th>
+                    </tr>
+                    <tr>
+                        <th>Async / Await</th>
+                        <th>Mais fácil de ler e escrever, especialmente com operações longas</th>
+                        <th>Requer cuidado com erros, pois pode gerar blocos try/catch</th>
+                    </tr>
+                </table>
+            </ol>
 
+        <li>Outros tópicos:</li>
+        <ol type="1">
+            <li>Hoisting</li>
+            <ul>
+                <li>Hoisting é o comportamento do JavaScript onde variáveis ​​e declarações de funções são "elevadas" ao topo de seu escopo antes da execução.</li>
+            </ul>
+            <li>Arrow Functions &#40;especialmente diferenças com relação as funções normais&#41; </li>
+            <ul>
+                <li>As funções de seta têm uma sintaxe mais curta e não são próprias <strong>this</strong> ou <strong>arguments</strong>.</li>
+            </ul>
+            <li>Desestruturação &#40;Destructuring&#41;</li>
+            <ul>
+                <li>A desestruturação permite extrair valores de arrays ou propriedades de objetos em variáveis ​​distintas.</li>
+            </ul>
+            <li>Closure</li>
+            <ul>
+                <li>Um closure é uma função que lembra o escopo onde foi criado, mesmo depois de esse escopo ter sido finalizado.</li>
+            </ul>
+        </ol>
+    </ol>
+    <h1><a href="formulario.html">Parte 2</a></h1>
+</body>
+</html>
